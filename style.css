@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Mukta:wght@300&family=Poppins&family=Roboto:wght@300;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: var(--font-color);
+    box-sizing: border-box;
+    font-size: 16.5px;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --font-color: #444;
+    --font-color-bold: #111;
+    --font-emphasis: #EE1C47;
+}
+
+/* =-=-= CONFIGURAÇÃO NAVBAR =-=-= */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.navmenu a:hover {
+    color: var(--font-emphasis);
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon a ion-icon {
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.42s;
+}
+
+.nav-icon a ion-icon:hover {
+    transform: scale(1.1);
+    color: var(--font-emphasis);
+}
+
+#menu-icon {
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+/* =-=-= CONFIGURAÇÃO SEÇÕES DE TEXTO =-=-= */
+
+section {
+    padding: 10% 10%;
+}
+
+.main-home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(undraw_toy_car_-7-umw.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text h5 {
+    color: var(--font-emphasis);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.main-text h1 {
+    color: #000;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    border-radius: 5px;
+    color:var(--font-color-bold);
+    display: inline-block;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.main-btn:hover {
+    background: var(--font-color-bold);
+    color: white;
+}
+
+.main-btn ion-icon {
+    vertical-align: middle;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+
+.down ion-icon {
+    cursor: pointer;
+    font-size: 30px;
+    border: 2px solid #2c2c2c;
+    border-radius: 50px;
+    padding: 12px 12px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+}
+
+.down ion-icon:hover {
+    background: #2c2c2c;
+    color: white;
+}
+
+.header.sticky {
+    background: white;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.center-text h2 {
+    color: var(--font-color-bold);
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.center-text span {
+    font-size: 28px;
+    color: var(--font-emphasis);
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.row {
+    position: relative;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.row img {
+    border-radius: 5px;
+    margin-bottom: 0.6em;
+    width: 390px;
+    height: 450px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+}
+
+.product-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #27b737;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.heart-icon ion-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.heart-icon ion-icon:hover {
+    color: var(--font-emphasis);
+}
+
+.rating {
+    color: #FF8C00;
+    font-size: 18px;
+}
+
+.price h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.up-center-text h2 {
+    text-align: center;
+    color: var(--font-color-bold);
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 3em;
+}
+
+.cart img {
+    width: 380px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.update-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cart h5 {
+    color: #636872;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.cart h4 {
+    color: var(--font-color-bold);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart p {
+    color: #707070;
+    font-size: 15px;
+    max-width: 380px;
+    line-height: 25px;
+    margin-bottom: 1em;
+}
+
+.cart h6 {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 500;
+}
+
