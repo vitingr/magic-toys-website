@@ -300,7 +300,8 @@ section {
 /* =-=-= CONFIGURAÇÃO FOOTER =-=-= */
 
 .contact {
-    background: #f3f4f6;
+    background: #cecece;
+    margin-top: -1px;
 }
 
 .contact-info {
@@ -385,7 +386,7 @@ section {
 }
 
 .custom-shape-divider-bottom-1678588569 .shape-fill {
-    fill: #f3f4f6;
+    fill: #cecece;
 }
 
 /* =-=-= RESPONSIVIDADE =-=-= */
