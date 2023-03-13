@@ -230,7 +230,7 @@ section {
     color: var(--font-emphasis);
 }
 
-.rating {
+.rating ion-icon {
     color: #FF8C00;
     font-size: 18px;
 }
