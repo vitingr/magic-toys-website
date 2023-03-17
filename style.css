@@ -119,7 +119,7 @@ section {
 
 .main-btn {
     border-radius: 5px;
-    color:var(--font-color-bold);
+    color: var(--font-color-bold);
     display: inline-block;
     font-weight: 500;
     text-transform: capitalize;
@@ -292,6 +292,7 @@ section {
 }
 
 .cart h6 {
+    cursor: pointer;
     color: #151515;
     font-size: 14px;
     font-weight: 500;
@@ -388,9 +389,164 @@ section {
     fill: #f3f4f6;
 }
 
+.cta {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.95);
+}
+
+/* =-=-= CONFIGURAÇÕES HISTORIA =-=-= */
+
+.historia {
+    margin: auto;
+    max-width: 1300px;
+}
+
+.historia h1 {
+    font-size: 35px;
+    text-align: center;
+    color: var(--font-emphasis);
+    margin-bottom: 2em;
+}
+
+.historia h2 {
+    font-size: 25px;
+    margin-bottom: 1em;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.historia h2:hover {
+    cursor: pointer;
+    color: #b1dae7;
+}
+
+.historia p {
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+/* =-=-= CONFIGURAÇÕES CONTATO =-=-= */
+
+.contato {
+    padding: 0;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato h1 {
+    text-align: center;
+    cursor: pointer;
+    font-size: 32.5px;
+    color: #a5cdd9;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.contato p {
+    color: #234567;
+}
+
+.contato-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contato-info iframe {
+    border-radius: 10px;
+}
+
+.contato-info h1 {
+    color: #a5cdd9;
+    margin-left: 1em;
+    font-size: 25px;
+}
+
+.contato-info .informacoes {
+    margin-left: 2em;
+}
+
+.contato-info .informacoes p {
+    color: #a5cdd9;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    margin: 1em;
+}
+
+.contato-info .informacoes span {
+    font-weight: normal;
+}
+
+.contato-info .informacoes ion-icon {
+    font-weight: bold;
+    color: #7bb4c5;
+    font-size: 19px;
+}
+
 /* =-=-= RESPONSIVIDADE =-=-= */
 
 @media (max-width: 890px) {
+    .main-home {
+        background: none;
+    }
     header {
         padding: 20px 3%;
         transition: 0.4s;
@@ -402,10 +558,12 @@ section {
         font-size: 50px;
         transition: 0.4s;
     }
+
     .main-text p {
         font-size: 18px;
         transition: 0.4s;
     }
+
     .main-btn {
         padding: 10px 20px;
         transition: 0.4s;
@@ -427,10 +585,16 @@ section {
         transition-timing-function: ease-in-out;
         transition-duration: 0.4s;
     }
+
+    .contato h1 {
+        margin: 1em;
+    }
+
     .navmenu a {
         display: block;
-        margin: 18px 0; 
+        margin: 18px 0;
     }
+
     .navmenu.open {
         right: 0;
     }
