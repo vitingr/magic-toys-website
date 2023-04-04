@@ -31,6 +31,7 @@
     top: 0;
     right: 0;
     z-index: 1000;
+    background: white;
 }
 
 .logo img {
@@ -186,6 +187,8 @@ section {
 }
 
 .row {
+    width: 375px;
+    height: 575px;
     position: relative;
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
@@ -540,6 +543,75 @@ section {
     font-weight: bold;
     color: #7bb4c5;
     font-size: 19px;
+}
+
+/* =-=-= NOSSOS PRODUTOS =-=-= */
+
+.flex-produtos {
+    width: 300px;
+    width: 100%;
+    display: flex;
+}
+
+.filtro-produtos {
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+
+.filtro-produtos h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.filtro-produtos div p {
+    cursor: pointer;
+    width: 300px;
+    padding: 15px;
+    border-bottom: 1px solid #70707036;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.filtro-produtos div p:hover {
+    color: var(--font-emphasis);
+}
+
+.nossos-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+} 
+
+.nossos-produtos .row {
+    font-size: 13px;
+    width: 215px;
+    height: 350px;
+    position: relative;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.nossos-produtos .row img {
+    border-radius: 5px;
+    margin-bottom: 0.6em;
+    width: 215px;
+    height: 250px;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.nossos-produtos .row img:hover {
+    transform: scale(0.9);
+}
+
+.nossos-produtos .price h4 {
+    width: 215px;
 }
 
 /* =-=-= RESPONSIVIDADE =-=-= */
