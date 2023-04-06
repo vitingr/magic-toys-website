@@ -616,13 +616,30 @@ section {
 
 /* =-=-= RESPONSIVIDADE =-=-= */
 
+@media (max-width: 1300px) {
+    .flex-produtos {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 890px) {
     .main-home {
         background: none;
     }
+
     header {
         padding: 20px 3%;
         transition: 0.4s;
+    }
+
+    .flex-produtos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .center-text h2 {
+        margin-top: 5em;
+        margin-bottom: 3em;
     }
 }
 
@@ -661,6 +678,10 @@ section {
 
     .contato h1 {
         margin: 1em;
+    }
+
+    .flex-produtos {
+        margin-top: 100px;
     }
 
     .navmenu a {
